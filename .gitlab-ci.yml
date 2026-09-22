@@ -1,0 +1,13 @@
+stages:
+  - lint
+
+lint:
+  stage: lint
+  image: node:20-alpine
+  script:
+    - npm ci || npm install
+    - npx htmlhint index.html
+    - npx eslint .
+  only:
+    - merge_requests
+    - main

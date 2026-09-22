@@ -1,0 +1,20 @@
+{
+  "name": "portfolio-vanillajs",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/js/render.js",
+  "scripts": {
+    "dev": "npx http-server -c-1 -p 5173 .",
+    "lint": "eslint . && htmlhint index.html",
+    "lint:js": "eslint .",
+    "lint:html": "htmlhint index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "eslint": "^8.57.0",
+    "htmlhint": "^1.1.4"
+  }
+}
